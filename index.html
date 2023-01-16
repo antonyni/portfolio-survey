@@ -7,27 +7,38 @@
     <title>Portfolio Survey</title>
   </head>
   <body>
-    <div class="bgimg"></div>
-    <div class="bgcolor">
-    </div>
     <div class="fg block1" >
       <div class="fgbg block1"></div>
       <div class="fgtext">
         <h1 id="title">Portfolio Feedback</h1>
-        <p id="description">Your two cents would be appreciated! Anonymity is an option so be as critical as you want.</p>
+        <p id="description">Your two cents would be appreciated! Anonymity is an option.</p>
       </div>  
     </div>
       <div class="fg block2">
-        <div class="fgbg block2"></div>
+        <div class="fgbg"></div>
         <div class="fgtext">
            <form id="survey-form">
-             <label>Name?<input id="name" type="text" required></label>
+             <label for="name">Name<input class="whitebox" id="name" type="text" placeholder="Enter your name" required></label>
+             <label for="email">Email<input class="whitebox" id="email" type="email"  placeholder="Enter your email" required></label>
+             <label for="person">You are
+               <select id ="person" class="whitebox selectbox" required >
+                 <option class="invalid" disabled selected hidden>Choose one...</option>
+                 <option value="fnf">friends and family</option>
+                 <option value="hr">from HR</option>
+                 <option value="pg">a Programmer
+                 </option>
+                 <option value="pb">a passerby
+                 </option>
+                </select>
+             </label>
+             <label for="projects">How were the projects shown?<textarea id="design" ></textarea></label>
+             <label for="design">How was the design of the site?<textarea id="design" ></textarea></label>
 
              <label><input id="submit" type="submit" value="Submit"><label>
            </form>
 
         </div>
       </div>
-
+ <div class="bgimg"></div>
   </body>
 </html>
