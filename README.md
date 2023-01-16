@@ -12,6 +12,7 @@ v1.3 Updates
 - added overflow handling
 - fixed background image format to tint and allow for zoom-in without breaking screen
 - fixed centering
+- added changelog
 
 v1.2 Updates
 - added the name form as well as the submit button
