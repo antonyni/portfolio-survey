@@ -18,15 +18,20 @@
         <div class="fgbg"></div>
         <div class="fgtext">
            <form id="survey-form">
-             <h1>Anonymous</h1>
-             <label for ="anonymous">yes<input type="radio" name="radio" check="checked" name="radio">
+             <div class="radio">
+               <p class="radiohead">Anonymous</p>
+                 <label for ="anonymous">Yes<input onClick="showDiv('hidden_div',this);" type="radio" value="0" name="radio" check="checked">
                <span class="checkmark"></span>
-             </label>
-             <label for ="anonymous">no<input type="radio" name="radio">
-               <span class="checkmark"></span>
-             </label>
-             <label for="name">Name<input class="whitebox" id="name" type="text" placeholder="Enter your name" required></label>
-             <label for="email">Email<input class="whitebox" id="email" type="email"  placeholder="Enter your email" required></label>
+                 </label>
+                 <label for ="anonymous">No<input onClick="showDiv('hidden_div',this);" value="1" type="radio" name="radio">
+                   <span class="checkmark"></span>
+                 </label>
+             </div>
+             <div id=hidden_div>
+                 <label for="name">Name<input class="whitebox" id="name" type="text" placeholder="Enter your name" required></label>
+                 <label for="email">Email<input class="whitebox" id="email" type="email"  placeholder="Enter your email" required></label>           
+             </div>
+
              <label for="person">Describe yourself
                <select id ="person" class="whitebox selectbox" required >
                  <option class="invalid" disabled selected hidden>Choose one...</option>
