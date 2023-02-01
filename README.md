@@ -1,6 +1,10 @@
 # portfolio-survey
 A survey for my software engineer portfolio website. Results will be kept on a server with the option to remain anonymous
 
+v1.4 Updates
+- added JavaScript to hide options based on anonymity
+- added alert to show when submitted
+
 v1.3 Updates
 - changed wording on the description of the survey
 - changed textbox to have no outline when clicked
