@@ -44,7 +44,7 @@ body{
   z-index:2;
   text-align: left;
   border-radius: 5px;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 #description{
@@ -101,4 +101,15 @@ textarea{
   box-sizing: borderbox;
   resize: none;
   height:100px;
+}
+.radiohead{
+  margin-left:3.7%;
+  margin-bottom: 1%;
+  opacity:.8;
+}
+.radio{
+  padding-bottom: 1%;
+}
+#hidden_div {
+    display: none;
 }
