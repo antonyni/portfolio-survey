@@ -27,7 +27,7 @@
       <div class="fg block2">
         <div class="fgbg"></div>
         <div class="fgtext">
-           <form id="survey-form">
+           <form id="survey-form" onsubmit="alert('message sent');">
              <div class="radio">
                <p class="radiohead">Anonymous</p>
                  <label for ="anonymous">Yes<input onClick="showDiv('hidden_div',this);" type="radio" value="0" name="radio" check="checked">
@@ -43,7 +43,7 @@
              </div>
 
              <label for="person">Describe yourself
-               <select id ="person" class="whitebox selectbox"  >
+               <select id ="person" class="whitebox selectbox" required >
                  <option class="invalid" disabled selected hidden>Choose one...</option>
                  <option value="fnf">Friends/Family</option>
                  <option value="hr">HR</option>
@@ -56,7 +56,7 @@
              <label for="projects">How were the projects shown?<textarea id="design" ></textarea></label>
              <label for="design">How was the design of the site?<textarea id="design" ></textarea></label>
 
-<label><input id="submit" type="submit" value="Submit" onClick="alert('survey sent');"></label>
+<label><input id="submit" type="submit" value="Submit"></label>
            </form>
 
         </div>
